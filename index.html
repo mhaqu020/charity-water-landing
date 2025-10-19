@@ -28,6 +28,21 @@
 .btn:hover {
   background:#333;
 }
+/* Fade-in animation for the right panel */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel {
+  animation: fadeInUp 0.9s ease-out;
+}
 
 /* Mobile improvement: center content under 600px */
 @media (max-width:600px){
